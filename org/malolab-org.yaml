@@ -1,0 +1,35 @@
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: malolab
+  description: The malolab organization
+spec:
+  type: organization
+  profile:
+    displayName: Malolab Org
+    email: generic@malo.lab
+  children: [architects]
+---
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: architects
+  description: Architects
+spec:
+  type: team
+  profile:
+    # Intentional no displayName for testing
+    email: architects@malo.lab
+  parent: malolab
+  children: []
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: alex
+spec:
+  profile:
+    displayName: Alex Malo
+    email: alexandre.malo@malo.lab
+    picture: https://api.dicebear.com/7.x/avataaars/svg?seed=Luna&backgroundColor=transparent
+  memberOf: [architects]
