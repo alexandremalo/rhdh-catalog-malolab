@@ -72,7 +72,7 @@ spec:
       input:
         url: ./catalog-info/
         values:
-          repoUrl: github.com/alexandremalo/${{ parameters.repoName }}.git
+          repoUrl: github.com?owner=alexandremalo&repo=${{ parameters.repoName }}
           owner: ${{ parameters.owner }}
           system: ${{ parameters.system }}
           applicationType: aap-project
