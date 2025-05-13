@@ -1,0 +1,6 @@
+dc1:
+  hosts:
+    host1.malo.lab:
+dc2:
+  hosts:
+    host2.malo.lab:
