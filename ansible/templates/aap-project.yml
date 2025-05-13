@@ -72,6 +72,7 @@ spec:
       input:
         url: ./catalog-info/
         values:
+          repoName: ${{ parameters.repoName }}
           repoUrl: github.com?owner=alexandremalo&repo=${{ parameters.repoName }}
           owner: ${{ parameters.owner }}
           system: ${{ parameters.system }}
