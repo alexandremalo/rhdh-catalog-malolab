@@ -79,7 +79,7 @@ spec:
           applicationType: aap-project
           description: ${{ parameters.description }}
           sourceControl: ${{ parameters.sourceControl }}
-          devSpacesBaseUrl: https://devspaces.apps.ocp.malo.lab#https://github.com/alexandremalo/${{ parameters.repoName }}
+          devSpacesBaseUrl: https://devspaces.apps.cluster-j2rlm.j2rlm.sandbox1119.opentlc.com/#https://github.com/alexandremalo/${{ parameters.repoName }}
 
     - id: publish
       name: Publish
@@ -91,6 +91,9 @@ spec:
         repoUrl: github.com?owner=alexandremalo&repo=${{ parameters.repoName }}
         repoVisibility: 'public'
         defaultBranch: main
+        protectDefaultBranch: false
+        gitAuthorName: 'Red Hat Developer Hub'
+
 
     - id: register
       name: Register
