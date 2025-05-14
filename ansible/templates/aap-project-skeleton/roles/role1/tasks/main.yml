@@ -1,4 +1,4 @@
 ---
-- name: my first task
+- name: My first task
   ansible.builtin.debug:
     msg: helloworld

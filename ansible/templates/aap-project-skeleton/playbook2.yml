@@ -1,4 +1,5 @@
 ---
-- hosts: all
+- name: Second top level playbook
+  hosts: all
   roles:
     - role2
