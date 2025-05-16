@@ -65,15 +65,6 @@ spec:
               kind:
                 - Group
                 - User
-        system:
-          title: System
-          type: string
-          description: The Red Hat Developer Hub system catalog item name. This will appear on the “My items” tab. For example, “my-devhub-system”.
-          ui:field: EntityPicker
-          ui:options:
-            catalogFilter:
-              kind:
-                - System
   steps:
     - id: ansible
       name: Generating the Ansible Source Code Component
@@ -96,7 +87,7 @@ spec:
           repoName: ${{ parameters.collectionGroup }}.${{ parameters.collectionName }}
           repoUrl: ${{ steps.ansible.output.repoUrl }}
           owner: ${{ parameters.owner }}
-          system: ${{ parameters.system }}
+          system: ''
           applicationType: collection-project
           description: ${{ parameters.description }}
           collectionGroup: ${{ parameters.collectionGroup }}
