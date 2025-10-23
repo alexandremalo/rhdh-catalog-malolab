@@ -33,3 +33,14 @@ spec:
     email: alexandre.malo@malo.lab
     picture: https://api.dicebear.com/7.x/avataaars/svg?seed=Luna&backgroundColor=transparent
   memberOf: [architects]
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: alexandremalo
+spec:
+  profile:
+    displayName: Alex Malo
+    name: alexandre.malo@malo.lab
+    picture: https://api.dicebear.com/7.x/avataaars/svg?seed=Luna&backgroundColor=transparent
+  memberOf: [architects]
